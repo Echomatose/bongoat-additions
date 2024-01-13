@@ -2,6 +2,7 @@ package net.echomatose.bongoatmod;
 
 import com.mojang.logging.LogUtils;
 
+import net.echomatose.bongoatmod.item.ModCreativeModeTabs;
 import net.echomatose.bongoatmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -41,6 +42,8 @@ public class BongoatMod {
     public BongoatMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -57,7 +60,8 @@ public class BongoatMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BONGOAT);
+            // event.accept(ModItems.BONGOAT);
+
         }
     }
 
