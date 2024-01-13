@@ -1,6 +1,8 @@
 package net.echomatose.bongoatmod;
 
 import com.mojang.logging.LogUtils;
+
+import net.echomatose.bongoatmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -39,6 +41,8 @@ public class BongoatMod {
     public BongoatMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -52,6 +56,9 @@ public class BongoatMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.BONGOAT);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
