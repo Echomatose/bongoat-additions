@@ -42,6 +42,10 @@ public class BongoatItem extends Item {
                 pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), ModSounds.BONGOAT_YUCHI.get(),
                         SoundSource.PLAYERS, 1f, 1f, false);
 
+            } else if (name.equals("Sonack")) {
+                pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), ModSounds.BONGOAT_SONACK.get(),
+                        SoundSource.PLAYERS, 1f, 1f, false);
+
             } else {
                 pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
                         ModSounds.BONGOAT_BLOCK_CLICKED.get(),
