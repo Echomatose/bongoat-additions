@@ -50,7 +50,7 @@ public class BongoatItem extends Item {
 
     @Override
     public int getUseDuration(ItemStack pStack) {
-        return 72000;
+        return 60;
     }
 
 }
