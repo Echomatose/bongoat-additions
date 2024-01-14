@@ -23,8 +23,13 @@ public class BongoatBlock extends Block {
         String name = pPlayer.getDisplayName().getString();
         // System.out.print(name);
         if (name.equals("Echomatose")) {
-            pLevel.playSound(pPlayer, pPos, ModSounds.BONGOAT_BREAK.get(), SoundSource.BLOCKS, 1f, 1f);
+            pLevel.playSound(pPlayer, pPos, ModSounds.BONGOAT_ECHO.get(), SoundSource.BLOCKS, 1f, 1f);
             return InteractionResult.SUCCESS;
+
+        } else if (name.equals("LeonBlade")) {
+            pLevel.playSound(pPlayer, pPos, ModSounds.BONGOAT_LEON.get(), SoundSource.BLOCKS, 1f, 1f);
+            return InteractionResult.SUCCESS;
+
         } else {
             pLevel.playSound(pPlayer, pPos, ModSounds.BONGOAT_BLOCK_CLICKED.get(), SoundSource.BLOCKS, 1f, 1f);
             return InteractionResult.SUCCESS;

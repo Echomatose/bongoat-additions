@@ -11,6 +11,11 @@
     "sounds.bongoatmod.bongoat_fall": "Bongoat Block fallen onto",
     "sounds.bongoatmod.bongoat_place": "Bongoat Block placed",
     "sounds.bongoatmod.bongoat_hit": "Bongoat Block hit",
-    "sounds.bongoatmod.bongoat_break": "Bongoat Block broken"
+    "sounds.bongoatmod.bongoat_break": "Bongoat Block broken",
 
+    "sounds.bongoatmod.bongoat_echo": "Hi Echo!",
+    "sounds.bongoatmod.bongoat_yuchi": "Hi Yuchi!",
+    "sounds.bongoatmod.bongoat_sin": "Hi Sin!",
+    "sounds.bongoatmod.bongoat_sonack": "Hi Sonack!",
+    "sounds.bongoatmod.bongoat_leon": "Hi Leon!"
 }

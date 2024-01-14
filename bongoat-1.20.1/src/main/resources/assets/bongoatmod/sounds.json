@@ -6,6 +6,41 @@
             "bongoatmod:bongoat_block_clicked"
         ]
     },
+    "bongoat_echo": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_echo",
+        "sounds": [
+            "bongoatmod:friends/bongoat_echo"
+        ]
+    },
+    "bongoat_yuchi": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_yuchi",
+        "sounds": [
+            "bongoatmod:friends/bongoat_yuchi"
+        ]
+    },
+    "bongoat_sin": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_sin",
+        "sounds": [
+            "bongoatmod:friends/bongoat_sin"
+        ]
+    },
+    "bongoat_sonack": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_sonack",
+        "sounds": [
+            "bongoatmod:friends/bongoat_sonack"
+        ]
+    },
+    "bongoat_leon": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_leon",
+        "sounds": [
+            "bongoatmod:friends/bongoat_leon"
+        ]
+    },
     "bongoat_step": {
         "category": "block",
         "subtitle": "sounds.bongoatmod.bongoat_step",
