@@ -26,35 +26,26 @@ public class BongoatItem extends Item {
         {
             String name = pPlayer.getDisplayName().getString();
             // System.out.print(name);
-            if (name.equals("Echomatose")) {
-                pLevel.playSeededSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
-                        ModSounds.BONGOAT_ECHO.get(), SoundSource.PLAYERS, 1f, 1f, 0);
+            if (name.equals("Dev")) {
+                pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), ModSounds.BONGOAT_ECHO.get(),
+                        SoundSource.PLAYERS, 1f, 1f, false);
 
             } else if (name.equals("LeonBlade")) {
-                pLevel.playSeededSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
-                        ModSounds.BONGOAT_LEON.get(), SoundSource.PLAYERS, 1f, 1f, 0);
+                pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), ModSounds.BONGOAT_LEON.get(),
+                        SoundSource.PLAYERS, 1f, 1f, false);
 
             } else if (name.equals("Yuch_i")) {
-                pLevel.playSeededSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
-                        ModSounds.BONGOAT_YUCHI.get(), SoundSource.PLAYERS, 1f, 1f, 0);
+                pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), ModSounds.BONGOAT_YUCHI.get(),
+                        SoundSource.PLAYERS, 1f, 1f, false);
 
             } else {
-                pLevel.playSeededSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
-                        ModSounds.BONGOAT_BLOCK_CLICKED.get(), SoundSource.PLAYERS, 1f, 1f, 0);
+                pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
+                        ModSounds.BONGOAT_BLOCK_CLICKED.get(),
+                        SoundSource.PLAYERS, 1f, 1f, false);
             }
 
         }
         return InteractionResultHolder.consume(itemstack);
-    }
-
-    @Override
-    public boolean canPerformAction(ItemStack stack, ToolAction toolAction) {
-        return ToolActions.DEFAULT_SHIELD_ACTIONS.contains(toolAction);
-    }
-
-    @Override
-    public UseAnim getUseAnimation(ItemStack pStack) {
-        return UseAnim.BLOCK;
     }
 
     @Override
