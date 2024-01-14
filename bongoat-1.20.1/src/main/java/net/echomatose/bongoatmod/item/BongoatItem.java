@@ -26,12 +26,16 @@ public class BongoatItem extends Item {
         {
             String name = pPlayer.getDisplayName().getString();
             // System.out.print(name);
-            if (name.equals("Dev")) {
+            if (name.equals("Echomatose")) {
                 pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), ModSounds.BONGOAT_ECHO.get(),
                         SoundSource.PLAYERS, 1f, 1f, false);
 
             } else if (name.equals("LeonBlade")) {
                 pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), ModSounds.BONGOAT_LEON.get(),
+                        SoundSource.PLAYERS, 1f, 1f, false);
+
+            } else if (name.equals("S_I_N_7")) {
+                pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), ModSounds.BONGOAT_SIN.get(),
                         SoundSource.PLAYERS, 1f, 1f, false);
 
             } else if (name.equals("Yuch_i")) {
