@@ -5,6 +5,7 @@ import com.mojang.logging.LogUtils;
 import net.echomatose.bongoatmod.block.ModBlocks;
 import net.echomatose.bongoatmod.item.ModCreativeModeTabs;
 import net.echomatose.bongoatmod.item.ModItems;
+import net.echomatose.bongoatmod.sound.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -47,6 +48,7 @@ public class BongoatMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

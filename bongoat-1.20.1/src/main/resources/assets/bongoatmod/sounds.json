@@ -1,0 +1,44 @@
+{
+    "bongoat_block_clicked": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_block_clicked",
+        "sounds": [
+            "bongoatmod:bongoat_block_clicked"
+        ]
+    },
+    "bongoat_step": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_step",
+        "sounds": [
+            "bongoatmod:bongoat_step"
+        ]
+    },
+    "bongoat_fall": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_fall",
+        "sounds": [
+            "bongoatmod:bongoat_fall"
+        ]
+    },
+    "bongoat_place": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_place",
+        "sounds": [
+            "bongoatmod:bongoat_place"
+        ]
+    },
+    "bongoat_hit": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_hit",
+        "sounds": [
+            "bongoatmod:bongoat_hit"
+        ]
+    },
+    "bongoat_break": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.bongoat_break",
+        "sounds": [
+            "bongoatmod:bongoat_break"
+        ]
+    }
+}

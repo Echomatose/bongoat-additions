@@ -4,5 +4,13 @@
 
     "block.bongoatmod.bongoat_block": "Bongoat Block",
     
-    "creativetab.bongoat_tab": "Bongoat Tab"
+    "creativetab.bongoat_tab": "Bongoat Tab",
+
+    "sounds.bongoatmod.bongoat_block_clicked": "Bongoat Block Clicked",
+    "sounds.bongoatmod.bongoat_step": "Bongoat Block stepped on",
+    "sounds.bongoatmod.bongoat_fall": "Bongoat Block fallen onto",
+    "sounds.bongoatmod.bongoat_place": "Bongoat Block placed",
+    "sounds.bongoatmod.bongoat_hit": "Bongoat Block hit",
+    "sounds.bongoatmod.bongoat_break": "Bongoat Block broken"
+
 }

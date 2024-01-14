@@ -4,11 +4,11 @@ import com.google.common.base.Supplier;
 
 import net.echomatose.bongoatmod.BongoatMod;
 import net.echomatose.bongoatmod.item.ModItems;
+import net.echomatose.bongoatmod.sound.ModSounds;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,7 +20,8 @@ public class ModBlocks {
             BongoatMod.MODID);
 
     public static final RegistryObject<Block> BONGOAT_BLOCK = registerBlock("bongoat_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.WOOL)));
+            () -> new BongoatBlock(
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(ModSounds.BONGOAT_BLOCK_SOUNDS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
