@@ -2,6 +2,7 @@ package net.echomatose.bongoatmod;
 
 import com.mojang.logging.LogUtils;
 
+import net.echomatose.bongoatmod.block.ModBlocks;
 import net.echomatose.bongoatmod.item.ModCreativeModeTabs;
 import net.echomatose.bongoatmod.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -45,6 +46,7 @@ public class BongoatMod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

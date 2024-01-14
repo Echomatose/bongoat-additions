@@ -1,6 +1,7 @@
 package net.echomatose.bongoatmod.item;
 
 import net.echomatose.bongoatmod.BongoatMod;
+import net.echomatose.bongoatmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -17,6 +18,10 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BONGOAT.get()))
                     .title(Component.translatable("creativetab.bongoat_tab")).displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BONGOAT.get());
+                        pOutput.accept(ModItems.BONGOAT_SMILING.get());
+
+                        pOutput.accept(ModBlocks.BONGOAT_BLOCK.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {
