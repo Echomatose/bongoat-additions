@@ -30,6 +30,10 @@ public class BongoatBlock extends Block {
             pLevel.playSound(pPlayer, pPos, ModSounds.BONGOAT_LEON.get(), SoundSource.BLOCKS, 1f, 1f);
             return InteractionResult.SUCCESS;
 
+        } else if (name.equals("Yuch_i")) {
+            pLevel.playSound(pPlayer, pPos, ModSounds.BONGOAT_YUCHI.get(), SoundSource.BLOCKS, 1f, 1f);
+            return InteractionResult.SUCCESS;
+
         } else {
             pLevel.playSound(pPlayer, pPos, ModSounds.BONGOAT_BLOCK_CLICKED.get(), SoundSource.BLOCKS, 1f, 1f);
             return InteractionResult.SUCCESS;
