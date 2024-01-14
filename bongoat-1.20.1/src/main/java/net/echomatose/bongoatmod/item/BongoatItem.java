@@ -34,7 +34,7 @@ public class BongoatItem extends Item {
                 pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), ModSounds.BONGOAT_LEON.get(),
                         SoundSource.PLAYERS, 1f, 1f, false);
 
-            } else if (name.equals("S_I_N_7")) {
+            } else if (name.equals("Sin_The_Exile")) {
                 pLevel.playLocalSound(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), ModSounds.BONGOAT_SIN.get(),
                         SoundSource.PLAYERS, 1f, 1f, false);
 
