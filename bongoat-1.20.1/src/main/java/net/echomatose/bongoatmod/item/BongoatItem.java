@@ -1,17 +1,16 @@
 package net.echomatose.bongoatmod.item;
 
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
 import net.echomatose.bongoatmod.sound.ModSounds;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.common.ToolAction;
-import net.minecraftforge.common.ToolActions;
 
 public class BongoatItem extends Item {
 
@@ -20,7 +19,8 @@ public class BongoatItem extends Item {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
+    public InteractionResultHolder<ItemStack> use(@Nonnull Level pLevel, @Nonnull Player pPlayer,
+            @Nonnull InteractionHand pUsedHand) {
         ItemStack itemstack = pPlayer.getItemInHand(pUsedHand);
         pPlayer.startUsingItem(pUsedHand);
         {
@@ -57,8 +57,7 @@ public class BongoatItem extends Item {
     }
 
     @Override
-    public int getUseDuration(ItemStack pStack) {
+    public int getUseDuration(@Nullable ItemStack pStack) {
         return 60;
     }
-
 }
