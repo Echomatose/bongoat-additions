@@ -6,6 +6,13 @@
             "bongoatmod:bongoat_block_clicked"
         ]
     },
+    "nom_nom": {
+        "category": "block",
+        "subtitle": "sounds.bongoatmod.nom_nom",
+        "sounds": [
+            "bongoatmod:nom_nom"
+        ]
+    },
     "bongoat_echo": {
         "category": "block",
         "subtitle": "sounds.bongoatmod.bongoat_echo",

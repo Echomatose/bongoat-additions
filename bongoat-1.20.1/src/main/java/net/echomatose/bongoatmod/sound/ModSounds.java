@@ -20,6 +20,7 @@ public class ModSounds {
         public static final RegistryObject<SoundEvent> BONGOAT_SONACK = registerSoundEvents("bongoat_sonack");
         public static final RegistryObject<SoundEvent> BONGOAT_SIN = registerSoundEvents("bongoat_sin");
         public static final RegistryObject<SoundEvent> BONGOAT_LEON = registerSoundEvents("bongoat_leon");
+        public static final RegistryObject<SoundEvent> NOM_NOM = registerSoundEvents("nom_nom");
 
         public static final RegistryObject<SoundEvent> BONGOAT_STEP = registerSoundEvents("bongoat_step");
         public static final RegistryObject<SoundEvent> BONGOAT_FALL = registerSoundEvents("bongoat_fall");
